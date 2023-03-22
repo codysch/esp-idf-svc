@@ -25,6 +25,8 @@
 #[macro_use]
 extern crate alloc;
 
+#[cfg(feature = "allocator")]
+pub mod allocator;
 pub mod errors;
 #[cfg(all(
     feature = "alloc",
